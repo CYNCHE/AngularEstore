@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { CartToolComponent } from './shared/cart-tool/cart-tool.component';
 import { ProductPageComponent } from './product-list/product-page/product-page.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CommentComponent } from './product-list/comment/comment.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     HomeComponent,
     CartToolComponent,
     ProductPageComponent,
+    CommentComponent,
 
   ],
   imports: [

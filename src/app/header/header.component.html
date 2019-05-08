@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg fixed-top">
   <div class="container">
 
-    <a class="navbar-brand">Michael's Store</a>
+    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >Michael's Store</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse  flex-row" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse flex-row" id="navbarSupportedContent">
       <form class="form-inline my-2  flex-grow-1">
         <div class="input-group w-75">
           <input class="form-control " type="search" placeholder="Search" aria-label="Search">

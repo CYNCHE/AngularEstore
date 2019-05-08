@@ -1,13 +1,17 @@
 <div class="card">
   <div class="card-body">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <button class="btn btn-danger btn-lg">-</button>
+    <form [formGroup]="shoppingCartForm" >
+      <div class="input-group mb-3 form-group">
+        <div class="input-group-prepend">
+          <button class="btn btn-danger btn-lg my-btn" (click)="onClickMinus()">-</button>
+        </div>
+        <input type="number" class="form-control" placeholder="Quantity" style="height: 50px" formControlName="quantity">
+        <div class="input-group-append">
+            <button class="btn btn-danger btn-lg my-btn" (click)="onClickAdd()">+</button>
+        </div>
       </div>
-      <input type="number" class="form-control" placeholder="Quantity" style="height: 50px">
-      <div class="input-group-append">
-          <button class="btn btn-danger btn-lg">+</button>
-      </div>
-    </div>
+      <button class="btn btn-info my-btn" style="width:100%;">Add to Cart</button>
+      <button class="btn btn-info mt-2 my-btn" style="width:100%">Add to Wishlist</button>
+    </form>
   </div>
 </div>

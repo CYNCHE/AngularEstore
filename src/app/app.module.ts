@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './product-list/product-detail/product-de
 import { HomeComponent } from './home/home.component';
 import { CartToolComponent } from './shared/cart-tool/cart-tool.component';
 import { ProductPageComponent } from './product-list/product-page/product-page.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import { ProductPageComponent } from './product-list/product-page/product-page.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

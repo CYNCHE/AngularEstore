@@ -3,7 +3,7 @@
       <h1 class="header">{{ listName }}</h1>
   </div>
   <div class="card col-12 col-md-4 col-lg-3 border-0 my-1"  *ngFor="let product of products">
-    <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}" style="width: 100%;" style="cursor: pointer;">
+    <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}" style="width: 100%;" style="cursor: pointer;" [routerLink]="['/products', product.id]">
     <div class="card-body my-0 pt-0">
       <h5 class="card-title" style="cursor: pointer;">{{ product.name }}</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

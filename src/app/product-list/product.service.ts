@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../shared/product.model';
+import { Comment } from '../shared/comment.model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,15 @@ export class ProductService {
     {id: '8', name: 'computer', price: '3400', imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/61xwRm1JNcL._SX425_.jpg', rate: '4.3'},
   ]
 
+
+  comments: Comment[] = [
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '21212123231243545'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '2121213122142'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '212123231231212'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '21212126565432'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '212121423432545462'}
+  ]
+
   constructor() { }
 
 
@@ -26,5 +36,9 @@ export class ProductService {
 
   getProductById(id: string) {
     return this.products.find((product) => product.id == id);
+  }
+
+  getCommentsById(id: string) {
+    return this.comments.filter((comment) => comment.productId == id);
   }
 }

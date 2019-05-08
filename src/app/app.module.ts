@@ -14,6 +14,7 @@ import { CartToolComponent } from './shared/cart-tool/cart-tool.component';
 import { ProductPageComponent } from './product-list/product-page/product-page.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommentComponent } from './product-list/comment/comment.component';
+import { StarComponent } from './shared/star/star.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CommentComponent } from './product-list/comment/comment.component';
     CartToolComponent,
     ProductPageComponent,
     CommentComponent,
+    StarComponent,
 
   ],
   imports: [

@@ -23,4 +23,8 @@ export class ProductService {
   getProducts() {
     return this.products;
   }
+
+  getProductById(id: string) {
+    return this.products.find((product) => product.id == id);
+  }
 }

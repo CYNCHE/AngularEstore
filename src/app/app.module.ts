@@ -10,6 +10,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailComponent } from './product-list/product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
+import { CartToolComponent } from './shared/cart-tool/cart-tool.component';
+import { ProductPageComponent } from './product-list/product-page/product-page.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ProductDetailComponent,
     HomeComponent,
+    CartToolComponent,
+    ProductPageComponent,
 
   ],
   imports: [

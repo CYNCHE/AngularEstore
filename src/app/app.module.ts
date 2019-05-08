@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     HeaderComponent,
     CarouselComponent,
     ProductListComponent,
+    FooterComponent,
 
   ],
   imports: [

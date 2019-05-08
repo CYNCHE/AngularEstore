@@ -15,6 +15,7 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
+    //switch(this.listName)
     this.products = this.productService.getProducts();
   }
 

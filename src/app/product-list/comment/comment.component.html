@@ -1,3 +1,25 @@
-<p>
-  comment works!
-</p>
+<br>
+<br>
+<div style="padding-left: 1.25rem">
+  <button class="btn btn-primary mb-1" (click)="onClick()">Write a Review</button>
+  <div class="my-3" *ngIf="isShown">
+    <app-star [readonly]=false [(rate)]="newRate"></app-star>
+    <form [formGroup]="commentForm">
+      <textarea class="form-control mt-2" name="" id="" cols="30" rows="4" formControlName="content"></textarea>
+      <button class="btn btn-success mt-3" type="submit" (click)="addComment()">Submit</button>
+    </form>
+  </div>
+  <h2 class="header ml-0 mt-4">Review</h2>
+</div>
+
+<div class="card border-0" *ngFor="let comment of comments">
+  <div class="card-body">
+    <div class="row justify-content-between mx-0">
+      <h5 class="header card-title">{{ comment.userName }}</h5>
+      <p class="card-text">{{ comment.publishTime }}</p>
+    </div>
+    <app-star [rate]="comment.rate"></app-star>
+    <p class="card-text">{{ comment.content }}</p>
+  </div>
+  <hr>
+</div>

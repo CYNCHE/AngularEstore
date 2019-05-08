@@ -20,11 +20,11 @@ export class ProductService {
 
 
   comments: Comment[] = [
-    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '21212123231243545'},
-    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '2121213122142'},
-    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '212123231231212'},
-    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '21212126565432'},
-    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '212121423432545462'}
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '21212123231243545', rate: '3.4', userName: 'Michael'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '2121213122142', rate: '3.4', userName: 'Michael'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '212123231231212', rate: '3.4', userName: 'Michael'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '21212126565432', rate: '3.4', userName: 'Michael'},
+    {id: '1', productId: '1', userId: '1', content: 'This computer is very good', publishTime: '212121423432545462', rate: '3.4', userName: 'Michael'}
   ]
 
   constructor() { }

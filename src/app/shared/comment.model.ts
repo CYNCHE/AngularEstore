@@ -4,4 +4,6 @@ export interface Comment {
   userId: string;
   content: string;
   publishTime: string;
+  rate: string;
+  userName: string;
 }

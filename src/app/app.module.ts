@@ -15,6 +15,7 @@ import { ProductPageComponent } from './product-list/product-page/product-page.c
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommentComponent } from './product-list/comment/comment.component';
 import { StarComponent } from './shared/star/star.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { StarComponent } from './shared/star/star.component';
     ProductPageComponent,
     CommentComponent,
     StarComponent,
+    AdminComponent,
 
   ],
   imports: [

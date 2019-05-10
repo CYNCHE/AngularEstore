@@ -10,6 +10,8 @@
     </form>
   </div>
   <h2 class="header ml-0 mt-4">Review</h2>
+  <br>
+  <h4 *ngIf="comments.length == 0">No reviews available for this product..Be the first to review!</h4>
 </div>
 
 <div class="card border-0" *ngFor="let comment of comments">

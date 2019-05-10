@@ -40,5 +40,6 @@ export class CommentComponent implements OnInit {
     this.isShown = false;
     this.commentForm.reset();
     this.newRate = 5;
+    //alert('product added');
   }
 }

@@ -16,6 +16,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommentComponent } from './product-list/comment/comment.component';
 import { StarComponent } from './shared/star/star.component';
 import { AdminComponent } from './admin/admin.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { AdminComponent } from './admin/admin.component';
     CommentComponent,
     StarComponent,
     AdminComponent,
+    AuthComponent,
 
   ],
   imports: [

@@ -18,6 +18,7 @@ import { StarComponent } from './shared/star/star.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthComponent } from './auth/auth.component';
 import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { LoginComponent } from './auth/login/login.component';
     AdminComponent,
     AuthComponent,
     LoginComponent,
+    SignupComponent,
 
   ],
   imports: [

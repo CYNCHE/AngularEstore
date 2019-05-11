@@ -1,0 +1,14 @@
+.loginForm {
+  margin: auto;
+  width: 40%;
+}
+
+.mybtn:hover {
+  /* background-color: #353232; */
+  background-color: #353232 !important;
+}
+
+
+@media screen and (max-width: 900px) {
+  .loginForm {width: 80%}
+}

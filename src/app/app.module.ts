@@ -17,6 +17,7 @@ import { CommentComponent } from './product-list/comment/comment.component';
 import { StarComponent } from './shared/star/star.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { AuthComponent } from './auth/auth.component';
     StarComponent,
     AdminComponent,
     AuthComponent,
+    LoginComponent,
 
   ],
   imports: [

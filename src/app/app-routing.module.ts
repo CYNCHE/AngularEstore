@@ -16,7 +16,6 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'products/:productId', component: ProductPageComponent },
   ] },
-
   { path:'auth', component: AuthComponent, children: [
     { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
